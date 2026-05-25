@@ -1,6 +1,6 @@
 {
   "database": "Zotero",
-  "noteImportFolder": "",
+  "noteImportFolder": "papers",
   "pdfExportImageDPI": 120,
   "pdfExportImageFormat": "jpg",
   "pdfExportImageQuality": 90,
@@ -8,9 +8,10 @@
   "exportFormats": [
     {
       "name": "Paper Note",
-      "outputPathTemplate": "{{citekey}}.md",
-      "imageOutputPathTemplate": "{{citekey}}/",
-      "imageBaseNameTemplate": "image"
+      "outputPathTemplate": "papers/{{citekey}} - {{title}}.md",
+      "imageOutputPathTemplate": "attachments/Zotero_Images",
+      "imageBaseNameTemplate": "image",
+      "templatePath": "Zoteto templater.md"
     }
   ],
   "citeSuggestTemplate": "[[{{citekey}}]]",
